@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - WAKU ♥ TIENDA</title>
+    <link rel="icon" href="src/iconito.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css" >
+    <link rel="stylesheet" href="styles/carousel.css" >
+    <link rel="stylesheet" href="styles/header.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+    <script src="js/iframeCommunication.js"></script>
+    <script src="js/iframeResponsiveListener.js" defer></script>
+
+    <script src="js/buttonGoUp.js" defer></script>
+    <link rel="stylesheet" href="styles/buttonGoUp.css" >
+
+    <style>
+      :root { --height: 85px; }
+      iframe { height: var(--height); }
+    </style>
+
+    <script>
+      window.onload = function() {
+          sendMessageToIframe("index");
+      };
+    </script>
+</head>
+<body>
+  <div class="headerDiv" id="head">
+    <iframe src="header.html" class="" id="headerIframe"></iframe>
+  </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/images/gantz_art.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Gantz</h3>
+              <p>Manga completo disponible para su compra</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="src/images/vagabond_art.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Vagabond</h3>
+              <p>Lee el capítulo 327!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="src/images/berserk_art.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Berserk</h3>
+              <p>Lee el capítulo 367!</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <main>
+    <section>
+        <h2 class="center">Ultimos mangas actualizados</h2>
+        <ul>
+            <li> <a href="#" class="text-white">Kentaro Miura: Berserk ベルセルク 367 </a></li>
+            <li><a href="#" class="text-white">Takehiko Inoue: Vagabond バガボンド 327</a></li>
+            <li><a href="#" class="text-white">Hiroya Oku: Gantz ガンツ 383</a></li>
+        </ul>
+    </section>
+
+    <section id="manga-de-la-semana">
+      <h2 class="text-center">Manga de la Semana<br>Oyasumi Punpun</h2>
+
+      <div class="manga-info">
+          <img src="src/images/weekManga/Oyasumi_ini.jpg" alt="Oyasumi Punpun Inicio" class="manga-week img-fluid mx-auto d-block">
+          <br>
+          <p class="center">
+              "Oyasumi Punpun" es una obra maestra del mangaka Inio Asano. La historia sigue la vida de Punpun Punyama, un joven con una representación de pájaro, mientras enfrenta los desafíos de la vida, el amor y la pérdida.
+          </p>
+      </div>
+
+      <div class="manga-info">
+          <p class="center">
+              Con una narrativa única y a menudo desgarradora, "Oyasumi Punpun" explora temas profundos y oscuros de la condición humana. Asano crea una experiencia emotiva que deja una marca duradera en los lectores.
+          </p>
+          <br>
+          <img src="src/images/weekManga/oyasumi_end.webp" alt="Oyasumi Punpun Final" class="manga-week img-fluid mx-auto d-block">
+          <br>  
+      </div>
+  </section>
+
+  </main>
+  <button id="scrollToTopButton" onclick="scrollToTop()" class="btn btn-danger rounded-circle btn-lg"><h2>↑</h2></button>
+
+  <footer>
+    <div class="row justify-content-end">
+      <a href="#head" class="col text-left text-white">Ir al Inicio</a>
+
+      <!-- Imagen para Instagram -->
+      
+
+      <p class="col text-right" style="margin-left: auto;">
+        <a href="https://www.instagram.com/" target="_blank" class="col text-center">
+          <img src="src/images/social/rrss_ig.png" alt="Instagram" width="20" height="20">
+        </a>
+  
+        <!-- Imagen para Facebook -->
+        <a href="https://www.facebook.com/" target="_blank" class="col text-center">
+            <img src="src/images/social/rrss_fb.png" alt="Facebook" width="30" height="30">
+        </a>
+        Copyright 2024
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

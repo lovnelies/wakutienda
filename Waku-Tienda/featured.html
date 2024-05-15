@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destacados - WAKU TIENDA</title>
+    <link rel="icon" href="src/iconito.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/featured.css">
+    <link rel="stylesheet" href="styles/header.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="js/iframeCommunication.js"></script>
+    <script src="js/iframeResponsiveListener.js" defer></script>
+
+    <script src="js/buttonGoUp.js" defer></script>
+    <link rel="stylesheet" href="styles/buttonGoUp.css" >
+    
+    <style>
+        :root { --height: 85px; }
+        iframe { height: var(--height); }
+    </style>
+    <script>
+        window.onload = function() {
+            sendMessageToIframe("featured");
+        };
+    </script>
+
+</head>
+<body>
+    <div class="headerDiv" id="head">
+        <iframe src="header.html" class="" id="headerIframe"></iframe>
+    </div>
+
+    <br>
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="manga center">
+                    <img src="src/images/featured/1_berserk.jpg" alt="Berserk" class="manga-cover center">
+                    <h3>Berserk<br>ベルセルク</h3>
+                    <p>Guts, un guerrero con una espada gigante, lucha contra criaturas demoníacas en un mundo oscuro y brutal. Una historia épica de fantasía oscura.</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="manga center">
+                    <img src="src/images/featured/5_Kingdom.jpg" alt="Kingdom" class="manga-cover center">
+                    <h3>Given<br>ギヴン</h3>
+                    <p>Aquel acorde hizo vibrar el aire polvoriento y el tímpano de los dos. Allí surge... nuestra música.</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="manga center">
+                    <img src="src/images/featured/7_GoldenKamuy.jpg" alt="Golden Kamuy" class="manga-cover center">
+                    <h3>Shingeki No Kyojin<br>進撃の巨人</h3>
+                    <p>La historia gira en torno a Eren Jaeger, su hermana adoptiva Mikasa Ackerman y su amigo Armin Arlert. En este mundo, la población humana vive dentro de ciudades rodeadas de enormes muros para protegerse de la aparición de seres gigantescos que devoran personas, los titanes. Un día, el muro que protegía a la humanidad es atacado por un titán que sobrepaso a la muralla y el resto de los titanes logran invadir la ciudad.</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="manga center">
+                    <img src="src/images/featured/9_punpun.jpg" alt="Oyasumi Punpun" class="manga-cover center">
+                    <h3>Oyasumi Punpun<br>おやすみ プンプン</h3>
+                    <p>"Oyasumi Punpun" sigue la vida de Punpun Punyama, un niño con una representación pájaro que enfrenta los desafíos de la vida, el amor y la pérdida mientras crece.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <button id="scrollToTopButton" onclick="scrollToTop()" class="btn btn-danger rounded-circle btn-lg"><h2>↑</h2></button>
+    <footer>
+        <div class="row justify-content-end">
+          <a href="#head" class="col text-left text-white">Ir al Inicio</a>
+    
+          <!-- Imagen para Instagram -->
+          
+    
+          <p class="col text-right" style="margin-left: auto;">
+            <a href="https://www.instagram.com/" target="_blank" class="col text-center">
+              <img src="src/images/social/rrss_ig.png" alt="Instagram" width="20" height="20">
+            </a>
+      
+            <!-- Imagen para Facebook -->
+            <a href="https://www.facebook.com/" target="_blank" class="col text-center">
+                <img src="src/images/social/rrss_fb.png" alt="Facebook" width="30" height="30">
+            </a>
+            Copyright 2024
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
